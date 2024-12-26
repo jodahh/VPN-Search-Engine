@@ -3,11 +3,11 @@ from bs4 import BeautifulSoup
 
 i = 0
 
-litSSTP = ["Протокол: SSTP\nЛогин: vpn\nПароль: vpn\n"]
+litSSTP = ["Protocol: SSTP\nLogin: vpn\nPassword: vpn\n"]
 
-litL2TP = ["Протокол: L2TP\nОбщий ключ: vpn\nЛогин: vpn\nПароль: vpn\n"]
+litL2TP = ["Protocol: L2TP\nShared key: vpn\nLogin: vpn\nPassword: vpn\n"]
 
-litOpenVPN = ['Протокол: OpenVPN\n']
+litOpenVPN = ['Protocol: OpenVPN\n']
 
 # URL веб-страницы
 def sstp_protocol_vpn():
