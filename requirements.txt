@@ -1,0 +1,4 @@
+requests>=2.31.0
+bs4>=4.12.3
+ttkbootstrap>=1.10.1
+pillow>=8.2.0
