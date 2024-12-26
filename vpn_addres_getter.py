@@ -36,7 +36,7 @@ def sstp_protocol_vpn():
         # Пропускаем заголовок "ИМЯ ХОСТА"
             if "ИМЯ ХОСТА" not in host_name and "ПИНГ" not in ping and "РАСПОЛОЖЕНИЕ" not in host_countr and "ВРЕМЯ РАБОТЫ" not in uptime:
 
-                litSSTP.append(f"\nХост: {host_name}\nСтрана: {host_countr}\nПинг: {ping}\nВремя работы: {uptime}\n")
+                litSSTP.append(f"\nHost Name: {host_name}\nCountry: {host_countr}\nPing: {ping}\nUptime: {uptime}\n")
         return litSSTP
 
     else:
@@ -68,7 +68,7 @@ def l2tp_protocol_vpn():
         # Пропускаем заголовок "ИМЯ ХОСТА"
             if "ИМЯ ХОСТА" not in host_name and "ПИНГ" not in ping and "РАСПОЛОЖЕНИЕ" not in host_countr and "ВРЕМЯ РАБОТЫ" not in uptime:
 
-                litL2TP.append(f"\nХост: {host_name}\nСтрана: {host_countr}\nПинг: {ping}\nВремя работы: {uptime}\n")
+                litL2TP.append(f"\nHost NAme: {host_name}\nCountry: {host_countr}\nPing: {ping}\nUptime: {uptime}\n")
         return litL2TP
 
     else:
@@ -100,7 +100,7 @@ def open_vpn_protocol_vpn():
                 host_name_one = list_host[0] + '.ovpn'
                 host_name_two = list_host[1] + '.ovpn'
                 # print(host_name_one,"\n",host_name_two)
-                litOpenVPN.append(f"\nХост 1: {host_name_one}\nХост 2: {host_name_two}\nСтрана: {host_countr}\nПинг: {ping}\nВремя работы: {uptime}\n")
+                litOpenVPN.append(f"\nHost Name 1: {host_name_one}\nHost Name 2: {host_name_two}\nCountry: {host_countr}\nPing: {ping}\nUptime: {uptime}\n")
 
             host_countr = host_countrys[i].get_text(strip=True)
             ping = host_ping[i].get_text(strip=True)
@@ -108,7 +108,7 @@ def open_vpn_protocol_vpn():
             # print(host_name)
         # Пропускаем заголовок "ИМЯ ХОСТА"
             if "ИМЯ ХОСТА" not in host_name and "ПИНГ" not in ping and "РАСПОЛОЖЕНИЕ" not in host_countr and "ВРЕМЯ РАБОТЫ" not in uptime:
-                litL2TP.append(f"\nХост: {host_name}\nСтрана: {host_countr}\nПинг: {ping}\nВремя работы: {uptime}\n")
+                litL2TP.append(f"\nHost NAme: {host_name}\nCountry: {host_countr}\nPing: {ping}\nUptime: {uptime}\n")
         return litOpenVPN
 
     else:
